@@ -1,0 +1,30 @@
+{
+  "dataset_path": "D:\\毕业设计01\\processed\\transaction_dataset_cleaned.csv",
+  "train_shape": [
+    7852,
+    38
+  ],
+  "test_shape": [
+    1964,
+    38
+  ],
+  "feature_count": 38,
+  "accuracy": 0.960285132382892,
+  "precision": 0.9685863874345549,
+  "recall": 0.8486238532110092,
+  "f1": 0.9046454767726161,
+  "roc_auc": 0.9862910682549595,
+  "average_precision": 0.965057745426237,
+  "parameters": {
+    "n_estimators": 300,
+    "random_state": 42,
+    "class_weight": "balanced",
+    "n_jobs": -1
+  },
+  "excluded_columns": [
+    "FLAG",
+    "Address",
+    "ERC20 most sent token type",
+    "ERC20_most_rec_token_type"
+  ]
+}

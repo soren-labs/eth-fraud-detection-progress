@@ -1,0 +1,53 @@
+{
+  "dataset_path": "D:\\毕业设计01\\processed\\transaction_dataset_cleaned.csv",
+  "train_val_shape": [
+    7852,
+    40
+  ],
+  "test_shape": [
+    1964,
+    40
+  ],
+  "feature_variant": "numeric_textfreq",
+  "feature_count": 40,
+  "best_threshold": 0.66,
+  "metrics_default_threshold": {
+    "accuracy": 0.9694501018329938,
+    "precision": 0.9392523364485982,
+    "recall": 0.9220183486238532,
+    "f1": 0.9305555555555556,
+    "roc_auc": 0.9922561722465055,
+    "average_precision": 0.9798557502742328
+  },
+  "metrics_tuned_threshold": {
+    "accuracy": 0.969959266802444,
+    "precision": 0.9631449631449631,
+    "recall": 0.8990825688073395,
+    "f1": 0.930011862396204,
+    "roc_auc": 0.9922561722465055,
+    "average_precision": 0.9798557502742328
+  },
+  "recommended_test_strategy": "default_0.5",
+  "recommended_test_metrics": {
+    "accuracy": 0.9694501018329938,
+    "precision": 0.9392523364485982,
+    "recall": 0.9220183486238532,
+    "f1": 0.9305555555555556,
+    "roc_auc": 0.9922561722465055,
+    "average_precision": 0.9798557502742328
+  },
+  "best_params": {
+    "config_name": "deeper_more_trees",
+    "n_estimators": 500,
+    "max_depth": 5,
+    "learning_rate": 0.04,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 1,
+    "gamma": 0.0,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "scale_pos_weight_mult": 1.0
+  },
+  "best_scale_pos_weight": 3.5048766494549626
+}

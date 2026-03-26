@@ -1,0 +1,56 @@
+{
+  "source_csv": "D:\\毕业设计01\\transaction_dataset.csv",
+  "output_csv": "D:\\毕业设计01\\processed\\transaction_dataset_cleaned.csv",
+  "original_rows": 9841,
+  "original_cols": 51,
+  "rows_after_dedup": 9816,
+  "cleaned_rows": 9816,
+  "cleaned_cols": 42,
+  "removed_rows": 25,
+  "removed_columns": {
+    "Index": "identifier column",
+    "Unnamed: 0": "identifier column",
+    "ERC20 uniq sent addr.1": "ambiguous field name and very low information",
+    "ERC20 avg time between sent tnx": "constant numeric column",
+    "ERC20 avg time between rec tnx": "constant numeric column",
+    "ERC20 avg time between rec 2 tnx": "constant numeric column",
+    "ERC20 avg time between contract tnx": "constant numeric column",
+    "ERC20 min val sent contract": "constant numeric column",
+    "ERC20 max val sent contract": "constant numeric column",
+    "ERC20 avg val sent contract": "constant numeric column"
+  },
+  "duplicate_address_rows": 50,
+  "duplicate_address_count": 25,
+  "text_conflict_addresses": [
+    "0x4c24af967901ec87a6644eb1ef42b680f58e67f5",
+    "0x4c271764eadcf0d07e5a937b2de290294c9d11c2",
+    "0x4c7520df888aa4569a37ac7d132f89c65821f0af",
+    "0x4c77f6b01da78d053d5885e43bce5239b623dd3e",
+    "0x4c7accc2689708892be29256fbe9d45a92f0aa97",
+    "0x4cad652b71519a7a68d05dada31122c4c9a5ed95",
+    "0x4cb981a7a2956cdfa8afbf454cb4e1b13c69aeb9"
+  ],
+  "numeric_conflict_addresses": [],
+  "erc20_missing_before_fill": {
+    "Total ERC20 tnxs": 829,
+    "ERC20 total Ether received": 829,
+    "ERC20 total ether sent": 829,
+    "ERC20 total Ether sent contract": 829,
+    "ERC20 uniq sent addr": 829,
+    "ERC20 uniq rec addr": 829,
+    "ERC20 uniq rec contract addr": 829,
+    "ERC20 min val rec": 829,
+    "ERC20 max val rec": 829,
+    "ERC20 avg val rec": 829,
+    "ERC20 min val sent": 829,
+    "ERC20 max val sent": 829,
+    "ERC20 avg val sent": 829,
+    "ERC20 uniq sent token name": 829,
+    "ERC20 uniq rec token name": 829
+  },
+  "erc20_token_no_info_count": {
+    "ERC20 most sent token type": 8268,
+    "ERC20_most_rec_token_type": 5280
+  },
+  "has_erc20_activity_count": 4599
+}

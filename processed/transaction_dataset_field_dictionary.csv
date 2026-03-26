@@ -1,0 +1,53 @@
+﻿raw_name,standard_name,final_name,action,notes
+Unnamed: 0,Unnamed: 0,,dropped,identifier column
+Index,Index,,dropped,identifier column
+Address,Address,Address,kept,
+FLAG,FLAG,FLAG,kept,
+Avg min between sent tnx,Avg min between sent tnx,Avg min between sent tnx,kept,
+Avg min between received tnx,Avg min between received tnx,Avg min between received tnx,kept,
+Time Diff between first and last (Mins),Time Diff between first and last (Mins),Time Diff between first and last (Mins),kept,
+Sent tnx,Sent tnx,Sent tnx,kept,
+Received Tnx,Received Tnx,Received Tnx,kept,
+Number of Created Contracts,Number of Created Contracts,Number of Created Contracts,kept,
+Unique Received From Addresses,Unique Received From Addresses,Unique Received From Addresses,kept,
+Unique Sent To Addresses,Unique Sent To Addresses,Unique Sent To Addresses,kept,
+min value received,min value received,min value received,kept,
+max value received ,max value received,max value received,kept,trimmed column name
+avg val received,avg val received,avg val received,kept,
+min val sent,min val sent,min val sent,kept,
+max val sent,max val sent,max val sent,kept,
+avg val sent,avg val sent,avg val sent,kept,
+min value sent to contract,min value sent to contract,min value sent to contract,kept,
+max val sent to contract,max val sent to contract,max val sent to contract,kept,
+avg value sent to contract,avg value sent to contract,avg value sent to contract,kept,
+total transactions (including tnx to create contract,total transactions (including tnx to create contract),total transactions (including tnx to create contract),kept,trimmed column name; fixed truncated column name
+total Ether sent,total Ether sent,total Ether sent,kept,
+total ether received,total ether received,total ether received,kept,
+total ether sent contracts,total ether sent contracts,total ether sent contracts,kept,
+total ether balance,total ether balance,total ether balance,kept,
+ Total ERC20 tnxs,Total ERC20 tnxs,Total ERC20 tnxs,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 total Ether received,ERC20 total Ether received,ERC20 total Ether received,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 total ether sent,ERC20 total ether sent,ERC20 total ether sent,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 total Ether sent contract,ERC20 total Ether sent contract,ERC20 total Ether sent contract,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 uniq sent addr,ERC20 uniq sent addr,ERC20 uniq sent addr,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 uniq rec addr,ERC20 uniq rec addr,ERC20 uniq rec addr,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 uniq sent addr.1,ERC20 uniq sent addr.1,,dropped,trimmed column name; ambiguous field name and very low information
+ ERC20 uniq rec contract addr,ERC20 uniq rec contract addr,ERC20 uniq rec contract addr,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 avg time between sent tnx,ERC20 avg time between sent tnx,,dropped,trimmed column name; constant numeric column
+ ERC20 avg time between rec tnx,ERC20 avg time between rec tnx,,dropped,trimmed column name; constant numeric column
+ ERC20 avg time between rec 2 tnx,ERC20 avg time between rec 2 tnx,,dropped,trimmed column name; constant numeric column
+ ERC20 avg time between contract tnx,ERC20 avg time between contract tnx,,dropped,trimmed column name; constant numeric column
+ ERC20 min val rec,ERC20 min val rec,ERC20 min val rec,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 max val rec,ERC20 max val rec,ERC20 max val rec,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 avg val rec,ERC20 avg val rec,ERC20 avg val rec,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 min val sent,ERC20 min val sent,ERC20 min val sent,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 max val sent,ERC20 max val sent,ERC20 max val sent,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 avg val sent,ERC20 avg val sent,ERC20 avg val sent,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 min val sent contract,ERC20 min val sent contract,,dropped,trimmed column name; constant numeric column
+ ERC20 max val sent contract,ERC20 max val sent contract,,dropped,trimmed column name; constant numeric column
+ ERC20 avg val sent contract,ERC20 avg val sent contract,,dropped,trimmed column name; constant numeric column
+ ERC20 uniq sent token name,ERC20 uniq sent token name,ERC20 uniq sent token name,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 uniq rec token name,ERC20 uniq rec token name,ERC20 uniq rec token name,kept,trimmed column name; filled structural ERC20 missing values with 0
+ ERC20 most sent token type,ERC20 most sent token type,ERC20 most sent token type,kept,trimmed column name; normalized token text missing values
+ ERC20_most_rec_token_type,ERC20_most_rec_token_type,ERC20_most_rec_token_type,kept,trimmed column name; normalized token text missing values
+,has_erc20_activity,has_erc20_activity,added,derived indicator after ERC20 cleaning
