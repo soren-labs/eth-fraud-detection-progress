@@ -3,14 +3,14 @@
 This repository records the current progress of an undergraduate thesis project on **interpretable Ethereum fraud detection**.
 
 The project focuses on building a machine learning based fraud risk detection pipeline for Ethereum addresses, and then using model explanation results to analyze **fraud type tendency**.  
-The final goal is to combine:
+The full pipeline now combines:
 
 - machine learning based fraud detection
 - SHAP-based interpretability
 - business-rule-based fraud type tendency analysis
 - LLM-assisted natural language explanation
 
-At the current stage, the **LLM explanation module is still pending**, while the data, modeling, optimization, and SHAP interpretation stages have already been completed.
+At the current stage, the core pipeline of **data cleaning -> baseline modeling -> XGBoost optimization -> SHAP interpretation -> LLM-assisted explanation generation** has been completed.
 
 ## Thesis Scope
 
@@ -145,18 +145,28 @@ Relevant outputs:
 - `outputs/shap_explanations/global_shap_summary_top15.png`
 - `outputs/shap_explanations/case_explanations.md`
 
-### Pending
+#### 8. LLM-assisted explanation generation
 
-The following part is not yet completed:
+The final explanation stage has now been implemented using the official DeepSeek API.  
+This stage takes:
 
-#### LLM-assisted explanation generation
+- optimized XGBoost model outputs
+- SHAP global explanation results
+- SHAP case-level explanation results
 
-The planned final stage is to use model predictions and SHAP contributions to generate natural-language fraud explanations and case descriptions.
+and generates:
 
-Current status:
+- natural-language global progress summary
+- case-level fraud risk explanations
+- thesis-ready paragraphs
+- defense-oriented talking points
 
-- methodology direction defined
-- implementation not finished yet
+Relevant outputs:
+
+- `outputs/llm_explanations/LLM结果汇总.md`
+- `outputs/llm_explanations/global_summary.md`
+- `outputs/llm_explanations/case_reports.md`
+- `outputs/llm_explanations/case_reports.csv`
 
 ## Current Best Result
 
@@ -217,4 +227,4 @@ If someone wants to quickly understand the current project progress, the recomme
 
 ## Current Project Status in One Sentence
 
-The project has already completed the core pipeline of **fraud type analysis -> data cleaning -> baseline model -> XGBoost optimization -> SHAP interpretation**, and is currently at the stage just before implementing the final **LLM-assisted explanation generation** module.
+The project has completed the full current pipeline of **fraud type analysis -> data cleaning -> baseline model -> XGBoost optimization -> SHAP interpretation -> LLM-assisted explanation generation**.
